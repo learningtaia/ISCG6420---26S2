@@ -1,4 +1,67 @@
-body {
+#box {
+    position: absolute;
+    left: 5px;
+    top: 5px;
     background-color: red;
-    color: blue;
+    height: 100px;
+    width: 100px;
+    animation-name: moveRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
+
+#box2 {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    animation-name: moveLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes moveRight {
+    0% {
+        left: 0px;
+        top: 0px;
+        background-color: red;
+    }
+    50% {
+        left: 1000px;
+        top: 0px;
+        background-color: blue;
+    }
+    100% {
+        left: 1000px;
+        top: 500px;
+        background-color: green;
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        right: 0px;
+        top: 0px;
+        background-color: green;
+    }
+    50% {
+        right: 1000px;
+        top: 0px;
+        background-color: red;
+    }
+    100% {
+        top: 500px;
+        right: 1000px;
+        background-color: blue;
+    }
+}
+
