@@ -1,0 +1,177 @@
+/* must have code for every css end start */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+/* must have code for every css file end */
+
+
+#adWrapper {
+    width: 400px;
+    height: 800px;
+    background-color: lightblue;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#adScene1Background img {
+    position: absolute;
+    height: 1050px;
+    left: -531px;
+    top: -60px;
+
+    animation-name: background-zoomOut;
+    animation-duration: 5s;
+}
+
+/* font styles start */
+#adScene1Line2, #adScene1Line3, #adScene1Line4, #adScene1Line5 {
+    position: absolute;
+    font-size: 60px;
+    color: white;
+}
+
+#adScene1Line1 {
+    position: absolute;
+    font-size: 46px;
+    color: white;
+    left: -30px;
+    top: 80px;
+    transform: perspective(400px) rotateX(4deg) rotateY(-25deg) rotateZ(-3deg) scale(1, 2);
+}
+
+#adScene1Line2 {
+    left: 10px;
+    top: 180px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0px;
+    animation-name: line2Unveil;
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+
+#adScene1Line3 {
+    left: 10px;
+    top: 250px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0px;
+    animation-name: line3Unveil;
+    animation-duration: 3.5s;
+    animation-delay: 1.5s;
+}
+
+#adScene1Line4 {
+    left: 10px;
+    top: 330px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0px;
+    animation-name: line4Unveil;
+    animation-duration: 2.5s;
+    animation-delay: 2.5s;
+}
+
+#adScene1Line5 {
+    left: 10px;
+    top: 395px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0px;
+    animation-name: line5Unveil;
+    animation-duration: 2s;
+    animation-delay: 3s;
+}
+/* font styles end */
+
+@keyframes background-zoomOut {
+    0% {
+        transform: scale(1.2);
+    }
+    70% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes line2Unveil {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 300%;
+    }
+    100% {
+        width: 300%;
+    }
+}
+
+@keyframes line3Unveil {
+    0% {
+        width: 0%;
+    }
+    57.14% {
+        width: 300%;
+    }
+    100% {
+        width: 300%;
+    }
+}
+
+@keyframes line4Unveil {
+    0% {
+        width: 0%;
+    }
+    16% {
+        width: 300%;
+    }
+    100% {
+        width: 300%;
+    }
+}
+
+@keyframes line5Unveil {
+    0% {
+        width: 0%;
+    }
+    16.66% {
+        width: 300%;
+    }
+    100% {
+        width: 300%;
+    }
+}
+
+adScene1 {
+    visibility: hidden;
+    animation-name: scene1;
+    animation-duration: 5s;
+}
+
+@keyframes scene1 {
+    0% {
+        visibility: visible;
+    }
+    95% {
+        visibility: visible;
+        opacity: 1;
+    }
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
