@@ -206,13 +206,14 @@ section {
 /* ------------------- SCENE TEXTS START ------------------- */
 #scene1text, #scene2text {
     position: absolute;
-    font-size: 35px;
-    color: #206E32;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 #scene1text {
-    left: 40%;
-    top: 60%;
+    color: #2d2c31;
+    left: 49%;
+    top: 66%;
     animation-name: scene1textAnimation;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
@@ -220,34 +221,51 @@ section {
 }
 
 #scene2text {
+    color: #68c37d;
     left: 0%;
     top: 0%;
-    animation-name: scene2textAnimation;
-    animation-duration: 5s;
-    animation-delay: 7s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-name: scene2textAnimationFadeIn, scene2textAnimation;
+    animation-duration: 2s, 5s;
+    animation-delay: 5s, 7s;
+    animation-timing-function: ease-in-out, ease-in-out;
+    animation-fill-mode: forwards, forwards;
 }
 
 @keyframes scene1textAnimation {
-    from {
-        font-size: 35px;
-        color: #206E32;
+    0% {
+        font-size: 30px;
+        color: #2d2c31;
     }
-    to {
-        font-size: 48px;
-        color: #51aae6;
+    50% {
+        color: #9288cf;
+    }
+    100% {
+        font-size: 43px;
+        color: #2d2c31;
     }
 }
 
 @keyframes scene2textAnimation {
-    from {
-        font-size: 35px;
-        color: #206E32;
+    0% {
+        font-size: 30px;
+        color: #68c37d;
+    }
+    50% {
+        color: #386843;
         
     }
+    100% {
+        font-size: 43px;
+        color: #68c37d;
+    }
+}
+
+@keyframes scene2textAnimationFadeIn {
+    from {
+        opacity: 0;
+    }
     to {
-        font-size: 48px;
-        color: #2f9e49;
+        opacity: 1;
     }
 }
