@@ -144,23 +144,110 @@ section {
     background-color: #51e6aa;
 }
 
+/* ------------------- SCENE IMAGES START ------------------- */
 #banner_scene1_img1 {
     position: absolute;
     width: 1385px;
     top: -170px;
     left: -30px;
-    animation-name: bannerScene1Background;
+
+    transform: scale(2);
+    
+    animation-name: bannerScene1BackgroundZoomOut;
     animation-duration: 5s;
+    animation-timing-function: ease-in-out, ease-in-out;
+    animation-fill-mode: forwards, forwards;
+}
+
+
+#banner_scene2_img1 {
+    position: absolute;
+    width: 1385px;
+    top: -170px;
+    left: -30px;
+    opacity: 0;
+    animation-name: bannerScene2BackgroundFadeIn, bannerScene2Background;
+    animation-duration: 2s, 5s;
+    animation-delay: 5s, 7s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 
-@keyframes bannerScene1Background {
+@keyframes bannerScene2BackgroundFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bannerScene1BackgroundZoomOut {
+    from {
+        transform: scale(1.2);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes bannerScene2Background {
     0% {
         left: -30px;
     }
 
     100% {
         left: -375px;
+    }
+}
+/* ------------------- SCENE IMAGES END ------------------- */
+
+
+/* ------------------- SCENE TEXTS START ------------------- */
+#scene1text, #scene2text {
+    position: absolute;
+    font-size: 35px;
+    color: #206E32;
+}
+
+#scene1text {
+    left: 40%;
+    top: 60%;
+    animation-name: scene1textAnimation;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+#scene2text {
+    left: 0%;
+    top: 0%;
+    animation-name: scene2textAnimation;
+    animation-duration: 5s;
+    animation-delay: 7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scene1textAnimation {
+    from {
+        font-size: 35px;
+        color: #206E32;
+    }
+    to {
+        font-size: 48px;
+        color: #51aae6;
+    }
+}
+
+@keyframes scene2textAnimation {
+    from {
+        font-size: 35px;
+        color: #206E32;
+        
+    }
+    to {
+        font-size: 48px;
+        color: #2f9e49;
     }
 }
