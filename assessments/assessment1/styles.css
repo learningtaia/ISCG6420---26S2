@@ -144,11 +144,13 @@ section {
     /* offset left edge */
     margin-left: 20px;
 
+    overflow: hidden;
+
     /* temporary background colour to identify it on page. Delete this. */
     background-color: #51e6aa;
 }
 
-/* ------------------- SCENE IMAGES START ------------------- */
+/* ------------------- BANNER SCENE IMAGES START ------------------- */
 #banner_bannerScene1_img1 {
     position: absolute;
     width: 1385px;
@@ -204,10 +206,10 @@ section {
         left: -375px;
     }
 }
-/* ------------------- SCENE IMAGES END ------------------- */
+/* ------------------- BANNER SCENE IMAGES END ------------------- */
 
 
-/* ------------------- SCENE TEXTS START ------------------- */
+/* ------------------- BANNER SCENE TEXTS START ------------------- */
 #bannerScene1text, #bannerScene2text {
     position: absolute;
     font-size: 30px;
@@ -282,4 +284,28 @@ section {
     top: 0%;
     left: 91%;
     opacity: 1;
+}
+/* ------------------- BANNER SCENE TEXTS END ------------------- */
+
+
+/* ------------------- SIDEBAR SCENE IMAGES START ------------------- */
+#sidebar_sidebarScene1_img {
+    position: absolute;
+    width: 445px;
+    height: 800px;
+}
+
+#sidebar_sidebarScene2_img {
+    position: absolute;
+    right: 0;
+    width: 390px;
+    height: 800px;;
+}
+
+#sidebar_sidebarScene3_img {
+    position: absolute;
+    left: -402px;
+    top: -90px;
+    width: 1350px;
+    height: 900px;
 }
