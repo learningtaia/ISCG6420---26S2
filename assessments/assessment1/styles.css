@@ -149,7 +149,7 @@ section {
 }
 
 /* ------------------- SCENE IMAGES START ------------------- */
-#banner_scene1_img1 {
+#banner_bannerScene1_img1 {
     position: absolute;
     width: 1385px;
     top: -170px;
@@ -157,27 +157,27 @@ section {
 
     transform: scale(1.2);
     
-    animation-name: bannerScene1BackgroundZoomOut;
+    animation-name: bannerbannerScene1BackgroundZoomOut;
     animation-duration: 5s;
     animation-timing-function: ease-in-out, ease-in-out;
     animation-fill-mode: forwards, forwards;
 }
 
 
-#banner_scene2_img1 {
+#banner_bannerScene2_img1 {
     position: absolute;
     width: 1385px;
     top: -170px;
     left: -30px;
     opacity: 0;
-    animation-name: bannerScene2BackgroundFadeIn, bannerScene2Background;
+    animation-name: bannerbannerScene2BackgroundFadeIn, bannerbannerScene2Background;
     animation-duration: 2s, 5s;
     animation-delay: 5s, 7s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 
-@keyframes bannerScene2BackgroundFadeIn {
+@keyframes bannerbannerScene2BackgroundFadeIn {
     0% {
         opacity: 0;
     }
@@ -186,7 +186,7 @@ section {
     }
 }
 
-@keyframes bannerScene1BackgroundZoomOut {
+@keyframes bannerbannerScene1BackgroundZoomOut {
     from {
         transform: scale(1.2);
     }
@@ -195,7 +195,7 @@ section {
     }
 }
 
-@keyframes bannerScene2Background {
+@keyframes bannerbannerScene2Background {
     0% {
         left: -30px;
     }
@@ -208,35 +208,35 @@ section {
 
 
 /* ------------------- SCENE TEXTS START ------------------- */
-#scene1text, #scene2text {
+#bannerScene1text, #bannerScene2text {
     position: absolute;
     font-size: 30px;
     font-weight: bold;
 }
 
-#scene1text {
+#bannerScene1text {
     color: #2d2c31;
     left: 49%;
     top: 66%;
-    animation-name: scene1textAnimation;
+    animation-name: bannerScene1textAnimation;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 
-#scene2text {
+#bannerScene2text {
     color: #68c37d;
     left: 0%;
     top: 0%;
     opacity: 0;
-    animation-name: scene2textAnimationFadeIn, scene2textAnimation;
+    animation-name: bannerScene2textAnimationFadeIn, bannerScene2textAnimation;
     animation-duration: 2s, 5s;
     animation-delay: 5s, 7s;
     animation-timing-function: ease-in-out, ease-in-out;
     animation-fill-mode: forwards, forwards;
 }
 
-@keyframes scene1textAnimation {
+@keyframes bannerScene1textAnimation {
     0% {
         font-size: 30px;
         color: #2d2c31;
@@ -250,7 +250,7 @@ section {
     }
 }
 
-@keyframes scene2textAnimation {
+@keyframes bannerScene2textAnimation {
     0% {
         font-size: 30px;
         color: #68c37d;
@@ -265,7 +265,7 @@ section {
     }
 }
 
-@keyframes scene2textAnimationFadeIn {
+@keyframes bannerScene2textAnimationFadeIn {
     from {
         opacity: 0;
     }

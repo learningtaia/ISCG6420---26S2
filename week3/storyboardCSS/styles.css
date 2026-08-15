@@ -22,7 +22,7 @@ html {
 
 
 /* ----------------- SCENE 1 STYLES START -----------------  */
-#adScene1Background img {
+#adbannerScene1Background img {
     position: absolute;
     height: 1050px;
     left: -531px;
@@ -33,13 +33,13 @@ html {
 }
 
 /* font styles start */
-#adScene1Line2, #adScene1Line3, #adScene1Line4, #adScene1Line5 {
+#adbannerScene1Line2, #adbannerScene1Line3, #adbannerScene1Line4, #adbannerScene1Line5 {
     position: absolute;
     font-size: 60px;
     color: white;
 }
 
-#adScene1Line1 {
+#adbannerScene1Line1 {
     position: absolute;
     font-size: 46px;
     color: white;
@@ -48,7 +48,7 @@ html {
     transform: perspective(400px) rotateX(4deg) rotateY(-25deg) rotateZ(-3deg) scale(1, 2);
 }
 
-#adScene1Line2 {
+#adbannerScene1Line2 {
     left: 10px;
     top: 180px;
 
@@ -60,7 +60,7 @@ html {
     animation-delay: 1s;
 }
 
-#adScene1Line3 {
+#adbannerScene1Line3 {
     left: 10px;
     top: 250px;
 
@@ -72,7 +72,7 @@ html {
     animation-delay: 1.5s;
 }
 
-#adScene1Line4 {
+#adbannerScene1Line4 {
     left: 10px;
     top: 330px;
 
@@ -84,7 +84,7 @@ html {
     animation-delay: 2.5s;
 }
 
-#adScene1Line5 {
+#adbannerScene1Line5 {
     left: 10px;
     top: 395px;
 
@@ -157,13 +157,13 @@ html {
     }
 }
 
-#adScene1 {
+#adbannerScene1 {
     visibility: hidden;
-    animation-name: scene1;
+    animation-name: bannerScene1;
     animation-duration: 5s;
 }
 
-@keyframes scene1 {
+@keyframes bannerScene1 {
     0% {
         visibility: visible;
     }
@@ -181,13 +181,13 @@ html {
 
 
 /* ----------------- SCENE 2 STYLES START -----------------  */
-#adScene2 {
+#adbannerScene2 {
     visibility: hidden;
-    animation-name: scene2;
+    animation-name: bannerScene2;
     animation-duration: 10s;
 }
 
-#adScene2Background img {
+#adbannerScene2Background img {
     position: absolute;
     height: 1050px;
     left: -531px;
@@ -198,7 +198,7 @@ html {
     animation-delay: 5s;
 }
 
-@keyframes scene2 {
+@keyframes bannerScene2 {
     0% {
         visibility: hidden;
         opacity: 0;
