@@ -300,6 +300,7 @@ section {
     right: 0;
     width: 390px;
     height: 800px;;
+    opacity: 0;  /* start off invisible */
 }
 
 #sidebar_sidebarScene3_img {
@@ -308,4 +309,5 @@ section {
     top: -90px;
     width: 1350px;
     height: 900px;
+    opacity: 0;  /* start off invisible */
 }
