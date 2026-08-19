@@ -1,7 +1,7 @@
-/*function animate() {
-    const sidebarImage1 = document.getElementById("sidebar_sidebarScene1_img");
-    const sidebarImage2 = document.getElementById("sidebar_sidebarScene2_img");
-    const sidebarImage3 = document.getElementById("sidebar_sidebarScene3_img");
+function animate() {
+    const sidebarScene1 = document.getElementById("sidebarScene1");
+    const sidebarScene2 = document.getElementById("sidebarScene2");
+    const sidebarScene3 = document.getElementById("sidebarScene3");
 
     let opacity = 1;
     let phase = 0;
@@ -18,8 +18,8 @@
         }
         else if (phase == 1) {
             opacity = opacity - 0.01;
-            sidebarImage1.style.opacity = opacity;  // image 1 fade out
-            sidebarImage2.style.opacity = 1 - opacity; // image 2 fade in
+            sidebarScene1.style.opacity = opacity;  // image 1 fade out
+            sidebarScene2.style.opacity = 1 - opacity; // image 2 fade in
             counter++;
             if (counter >= 100) {
                 opacity = 0;
@@ -37,8 +37,8 @@
         }
         else if (phase == 3) {
             opacity = opacity - 0.01;
-            sidebarImage2.style.opacity = opacity;    // image 2 fade out
-            sidebarImage3.style.opacity = 1 - opacity;  // image 3 fade in
+            sidebarScene2.style.opacity = opacity;    // image 2 fade out
+            sidebarScene3.style.opacity = 1 - opacity;  // image 3 fade in
             counter++;
             if (counter >= 100) {
                 opacity = 0;
@@ -55,6 +55,46 @@
     }
     animID = setInterval(doAnimation, 10);
 }
-animate();*/
+animate();
 
+/*
+const scenes = [];
+const texts = [];
 
+window.addEventListener("DOMContentLoaded", () => {
+    scenes.push(document.querySelector("#sidebarScene1"));
+    scenes.push(document.querySelector("#sidebarScene2"));
+    scenes.push(document.querySelector("#sidebarScene3"));
+
+    texts.push(document.querySelector("#sidebarScene1Text"));
+    texts.push(document.querySelector("#sidebarScene2Text"));
+    texts.push(document.querySelector("#sidebarScene3Line1"));
+    texts.push(document.querySelector("#sidebarScene3Line2"));
+
+    animteScenes();
+});
+
+function showScene(sceneNumber) {
+    console.log("scene");
+    for (let i = 0; i < scenes.length; i++) {
+        // conditional operator
+        scenes[i].style.visibility = (i === sceneNumber) ? "visible" : "hidden";
+    }
+}
+
+function animateScenes() {
+    let sceneNumber = 0;
+    showScene(sceneNumber);
+    let timer = setInterval(run, 3000);
+
+    function run() {
+        sceneNumber++;
+        if (sceneNumber >= scenes.length) {
+            clearInterval(timer);
+            sceneNumber = 0;
+            return;
+        }
+        showScene(sceneNumber);
+    }
+}
+*/

@@ -280,7 +280,7 @@ section {
     }
 }
 
-#studentID {
+#studentIDbanner {
     position: absolute;
     visibility: visible;
     font-size: 18px;
@@ -288,6 +288,15 @@ section {
     top: 0%;
     left: 91%;
     opacity: 1;
+}
+
+#studentIDsidebar {
+    position: absolute;
+    visibility: visible;
+    font-size: 18px;
+    color: red;
+    top: 0%;
+    left: 71%;
 }
 /* ------------------- BANNER SCENE TEXTS END ------------------- */
 
@@ -336,6 +345,7 @@ section {
     align-items: center;
     height: 100%;
     width: 100%;
+    opacity: 0;
 }
 
 #sidebar_sidebarScene2_img {
@@ -371,6 +381,7 @@ section {
     align-items: center;
     height: 100%;
     width: 100%;
+    opacity: 0;
 }
 
 #sidebar_sidebarScene3_img {
