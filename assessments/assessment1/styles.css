@@ -57,6 +57,10 @@ nav a:hover {
 .banner a:hover {
     opacity: 0.5;
 }
+.sidebar a:hover {
+    opacity: 0.5;
+}
+
 
 main {
     padding: 20px;
