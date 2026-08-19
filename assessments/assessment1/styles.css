@@ -292,6 +292,9 @@ section {
 /* ------------------- BANNER SCENE TEXTS END ------------------- */
 
 
+
+
+
 /* ------------------- SIDEBAR SCENE IMAGES START ------------------- */
 #sidebar_sidebarScene1_img {
     position: absolute;
@@ -315,3 +318,10 @@ section {
     height: 900px;
     opacity: 0;  /* start off invisible */
 }
+/* ------------------- SIDEBAR SCENE IMAGES START ------------------- */
+
+/* ------------------- SIDEBAR SCENE TEXTS START ------------------- */
+#sidebarScene1Line1, #sidebarScene1Line2, #sidebarScene1Line3 {
+    visibility: visible;
+}
+

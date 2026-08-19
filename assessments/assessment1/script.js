@@ -1,3 +1,5 @@
+const scenes = [];
+
 function animate() {
     const sidebarImage1 = document.getElementById("sidebar_sidebarScene1_img");
     const sidebarImage2 = document.getElementById("sidebar_sidebarScene2_img");
