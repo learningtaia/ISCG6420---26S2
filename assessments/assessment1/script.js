@@ -1,6 +1,4 @@
-const scenes = [];
-
-function animate() {
+/*function animate() {
     const sidebarImage1 = document.getElementById("sidebar_sidebarScene1_img");
     const sidebarImage2 = document.getElementById("sidebar_sidebarScene2_img");
     const sidebarImage3 = document.getElementById("sidebar_sidebarScene3_img");
@@ -57,4 +55,6 @@ function animate() {
     }
     animID = setInterval(doAnimation, 10);
 }
-animate();
+animate();*/
+
+

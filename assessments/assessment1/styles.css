@@ -12,7 +12,7 @@ html {
 
 /* ----- for editing purposes start ----- */
 * {
-    border: solid, black, 1px;
+    border: solid black 1px;
 }
 /* ----- for editing purposes end ----- */
 
@@ -295,33 +295,115 @@ section {
 
 
 
-/* ------------------- SIDEBAR SCENE IMAGES START ------------------- */
+/* ------------------- SIDEBAR SCENES START ------------------- */
+#sidebarScene1 {    /* scene 1 start */                     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 #sidebar_sidebarScene1_img {
     position: absolute;
     width: 445px;
     height: 800px;
 }
 
+#sidebarScene1Text {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    color: white;
+    background-color: rgb(97, 0, 177, 0.7);
+    font-family: cursive;
+    font-size: 35px;
+    font-weight: bold;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}   /* scene 1 end */                                           
+
+
+#sidebarScene2 {    /* scene 2 start */
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
 #sidebar_sidebarScene2_img {
     position: absolute;
-    right: 0;
-    width: 390px;
-    height: 800px;;
-    opacity: 0;  /* start off invisible */
+    width: 480px;
+    height: 900px;
+}
+
+#sidebarScene2Text {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    color: white;
+    background-color: rgb(97, 0, 177, 0.7);
+    font-family: cursive;
+    font-size: 35px;
+    font-weight: bold;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}   /* scene 2 end */
+
+
+#sidebarScene3 {    /* scene 3 start */
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 #sidebar_sidebarScene3_img {
     position: absolute;
-    left: -402px;
-    top: -90px;
     width: 1350px;
     height: 900px;
-    opacity: 0;  /* start off invisible */
+    left: -450px;
 }
-/* ------------------- SIDEBAR SCENE IMAGES START ------------------- */
 
-/* ------------------- SIDEBAR SCENE TEXTS START ------------------- */
-#sidebarScene1Line1, #sidebarScene1Line2, #sidebarScene1Line3 {
-    visibility: visible;
+#sidebarScene3Line1, #sidebarScene3Line2 {
+    font-family: cursive;
+    color: white;
+    font-weight: bold;
 }
+
+#sidebarScene3Line1 {
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    top: 10%;
+}
+
+#sidebarScene3Line2 {
+    position: absolute;
+    font-size: 30px;
+    background-color:  rgb(97, 0, 177);
+    left: 0;
+}   /* scene 3 end */
+/* ------------------- SIDEBAR SCENE IMAGES END ------------------- */
+
+
 
