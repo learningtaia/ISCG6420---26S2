@@ -29,7 +29,120 @@
             </a>
         </div>
         <main class="main">
-            <h1>Main content</h1>
+            <h1>Te Hono Tech Challenge</h1>
+            <section>                                                                           <!-- ------- REGISTRATION FORM START ------- -->
+                <h2 class="underline">Registration Form</h2>
+                <div class="container-half card" id="form-input-card">       <!-- form pages card start -->
+                    <subtitle class="card-title">Enter Details</subtitle>
+                    <progress value="25" max="100"></progress>
+                    <div id="form-page1" class="form-page" style="display: block;">     <!-- form page 1 -->
+                        <div>       <!-- page title -->
+                            <h3>Sign Up</h3>
+                        </div>
+                        <div>       <!-- page input buttons -->
+                            <label for="dob" class="row">
+                                Date of Birth:
+                                <input type="date" id="dob" />
+                            </label>
+                            <label for="team-size" class="row">
+                                Number of people in your team:
+                                <input type="number" id="team-size" />
+                            </label>
+                        </div>
+                        <div>       <!-- page nav buttons -->
+                            <button type="button" class="next" onclick="showPage(2)">Next</button>
+                        </div>
+                    </div>
+                    <div id="form-page2" class="form-page" style="display: none;">     <!-- form page 2 -->
+                        <div>       <!-- page title -->
+                            <h3>Contact Details</h3>
+                        </div>
+                        <div>       <!-- page input buttons -->
+                            <label for="name" class="row">
+                                Name:
+                                <input type="text" id="name" />
+                            </label>
+                            <label for="email" class="row">
+                                E-mail:
+                                <input type="email" id="email" />
+                            </label>
+                        </div>
+                        <div>       <!-- page nav buttons -->
+                            <button type="button" class="next" onclick="showPage(3)">Next</button>
+                            <button type="button" class="previous" onclick="showPage(1)">Previous</button>
+                        </div>
+                    </div>
+                    <div id="form-page3" class="form-page" style="display: none;">     <!-- form page 3 -->
+                        <div>       <!-- page title -->
+                            <h3>Technical Skills</h3>
+                        </div>
+                        <div>       <!-- page input buttons -->
+                            <label for="html-css">
+                                <input type="checkbox" id="html-css" name="skills" value="html-css" />
+                                HTML/CSS
+                            </label>
+                            <label for="javascript">
+                                <input type="checkbox" id="javascript" name="skills" value="javascript" />
+                                JavaScript
+                            </label>
+                            <label for="python">
+                                <input type="checkbox" id="python" name="skills" value="python" />
+                                Python
+                            </label>
+                            <label for="java">
+                                <input type="checkbox" id="java" name="skills" value="java" />
+                                Java
+                            </label>
+                            <label for="csharp">
+                                <input type="checkbox" id="csharp" name="skills" value="csharp" />
+                                C#
+                            </label>
+                            <label for="sql">
+                                <input type="checkbox" id="sql" name="skills" value="sql" />
+                                SQL
+                            </label>
+                        </div>
+                        <div>       <!-- page nav buttons -->
+                            <button type="button" class="next" onclick="showPage(4)">Next</button>
+                            <button type="button" class="previous" onclick="showPage(2)">Previous</button>
+                        </div>
+                    </div>
+                    <div id="form-page4" class="form-page" style="display: none;">     <!-- form page 4 -->
+                        <div>       <!-- page title -->
+                            <h3>Terms & Conditions</h3>
+                        </div>
+                        <div>       <!-- page input buttons -->
+                            <p>By submitting this registration form, you agree to participate in this event in a respectful manner, 
+                                and to provide the one known as Taia Milo with a 10 piece bucket of chicken from KFC and make sure 
+                                to mix it up, half hot-n-spicy and half original. 
+                            </p>
+                            <label for="terms">
+                                I agree
+                                <input type="checkbox" id="terms" name="terms" value="agreed" />
+                            </label>
+                        </div>
+                        <div>       <!-- page nav buttons -->
+                            <button type="button" class="previous" onclick="showPage(3)">Previous</button>
+                            <button type="button" class="next" onclick="submitData()">Submit</button>
+                        </div>
+                    </div>
+                </div>      <!-- form pages card end -->
+                <div class="container-half card" id="form-summary-card">       <!-- data summary card start -->
+                    <h3>Registration Successful!</h3>
+                    <subtitle class="card-title">Summary</subtitle>
+                    <table id="collected-data">
+                        <thead>
+                            <td>Name</td>
+                            <td>Date of Birth</td>
+                            <td>E-mail</td>
+                            <td>No. of People in Team</td>
+                            <td>Technical Skills</td>
+                        </thead>
+                    </table>
+                    <h4>We look foward to seeing you at the hackathon!</h4>
+                </div>      <!-- data summary card end -->
+                <script src="./form.js"></script>
+            </section>                                                                          <!-- ------- REGISTRATION FORM END ------- -->
         </main>
         <div class="sidebar">
             <a href="https://jschollitt.github.io/THTHackathon#success/" target="_blank">
