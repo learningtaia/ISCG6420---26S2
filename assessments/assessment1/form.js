@@ -44,8 +44,9 @@ function showPage(pageNumber) {
             formPage3.style.display = "none";
             formPage4.style.display = "block";
             progressBar.value = 100;
-            submitData();
             break;
+        case 5:
+            submitData();
         default:
             break;
     }
@@ -58,7 +59,7 @@ function getFormData() {
     const dob = document.getElementById("dob").value;
     const email = document.getElementById("email").value;
     const teamSize = document.getElementById("team-size").value;
-    const skills = document.querySelectorAll("input[name:skills]=checked");
+    const skills = document.querySelectorAll("input[name=skills]:checked");
 
     return data = {
         name: name,
@@ -94,4 +95,6 @@ function submitData() {
 
     formCard.style.display = "none";
     summaryCard.style.display = "block";
+
+    formData.appendChild(dataRow);
 }
