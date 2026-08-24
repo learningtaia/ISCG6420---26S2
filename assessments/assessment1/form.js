@@ -59,14 +59,19 @@ function getFormData() {
     const dob = document.getElementById("dob").value;
     const email = document.getElementById("email").value;
     const teamSize = document.getElementById("team-size").value;
-    const skills = document.querySelectorAll("input[name=skills]:checked");
+    const checkedSkills = document.querySelectorAll("input[name=skills]:checked");
+
+    const skills = [];
+    checkedSkills.forEach(function(skill) {
+        skills.push(skill.value);
+    });
 
     return data = {
         name: name,
         dob: dob,
         email: email,
         teamSize: teamSize,
-        skills: skills.value + ", " 
+        skills: skills.join(", ") 
     };
 }
 

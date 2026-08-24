@@ -485,9 +485,26 @@ progress::-moz-progress-bar,progress::-webkit-progress-value {
     vertical-align: middle;
 }
 
+.form-page label input[type="date"] {
+    line-height: 150%;    
+    width: 20%;
+}
+
+.form-page label input[type="number"] {
+    line-height: 150%;
+    width: 5%;
+}
+
 .form-page label input[type="text"] {
-    width: 70%;
-    float: right;
+    width: 50%;
+    float: none;
+    line-height: 150%;
+    padding-right: 10px;
+    margin-left: 10px;
+}
+.form-page label input[type="email"] {
+    width: 50%;
+    margin-left: 5px;
     line-height: 150%;
 }
 
@@ -499,7 +516,7 @@ progress::-moz-progress-bar,progress::-webkit-progress-value {
 }
 
 button:hover {
-    background-color: #b4b4b4;
+    background-color: #d4d4d4;
 }
 
 .form-page button {
