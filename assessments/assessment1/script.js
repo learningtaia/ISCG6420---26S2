@@ -1,7 +1,9 @@
+/* ----------------- SIDEBAR ANIMATION START ----------------- */ 
 function animate() {
     const sidebarScene1 = document.getElementById("sidebarScene1");
     const sidebarScene2 = document.getElementById("sidebarScene2");
     const sidebarScene3 = document.getElementById("sidebarScene3");
+    const sidebarScene4 = document.getElementById("sidebarScene4");
 
     let opacity = 1;
     let phase = 0;
@@ -50,51 +52,31 @@ function animate() {
             counter++;
             if (counter >= 200) {   // image 3 stays visible
                 clearInterval(animID);
+                sidebarScene4.style.visibility = "visible";
             }
         }
     }
     animID = setInterval(doAnimation, 10);
 }
 animate();
+/* ----------------- SIDEBAR ANIMATION END ----------------- */
 
-/*
-const scenes = [];
-const texts = [];
 
-window.addEventListener("DOMContentLoaded", () => {
-    scenes.push(document.querySelector("#sidebarScene1"));
-    scenes.push(document.querySelector("#sidebarScene2"));
-    scenes.push(document.querySelector("#sidebarScene3"));
 
-    texts.push(document.querySelector("#sidebarScene1Text"));
-    texts.push(document.querySelector("#sidebarScene2Text"));
-    texts.push(document.querySelector("#sidebarScene3Line1"));
-    texts.push(document.querySelector("#sidebarScene3Line2"));
 
-    animteScenes();
-});
+/* ----------------- SIDEBAR ANIMATION REPLAY START ----------------- */
+function sidebarScene4Replay() {
+    const sidebarScene1 = document.getElementById("sidebarScene1");
+    const sidebarScene2 = document.getElementById("sidebarScene2");
+    const sidebarScene3 = document.getElementById("sidebarScene3");
+    const sidebarScene4 = document.getElementById("sidebarScene4");
 
-function showScene(sceneNumber) {
-    console.log("scene");
-    for (let i = 0; i < scenes.length; i++) {
-        // conditional operator
-        scenes[i].style.visibility = (i === sceneNumber) ? "visible" : "hidden";
-    }
+    sidebarScene1.style.opacity = 1;
+    sidebarScene2.style.opacity = 0;
+    sidebarScene3.style.opacity = 0;
+
+    sidebarScene4.style.visibility = "hidden";
+
+    animate();
 }
-
-function animateScenes() {
-    let sceneNumber = 0;
-    showScene(sceneNumber);
-    let timer = setInterval(run, 3000);
-
-    function run() {
-        sceneNumber++;
-        if (sceneNumber >= scenes.length) {
-            clearInterval(timer);
-            sceneNumber = 0;
-            return;
-        }
-        showScene(sceneNumber);
-    }
-}
-*/
+/* ----------------- SIDEBAR ANIMATION REPLAY END ----------------- */

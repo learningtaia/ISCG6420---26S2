@@ -10,12 +10,6 @@ html {
 }
 /* must have code for every css file end */
 
-/* ----- for editing purposes start ----- */
-* {
-    border: solid black 1px;
-}
-/* ----- for editing purposes end ----- */
-
 .clear::after {
     content: "";
     clear: both;
@@ -559,3 +553,22 @@ td {
     text-align: center;
 }
 /* ------------------ REGISTRATION FORM END ------------------ */
+
+
+/* ------------------ REPLAY FUNCTION ------------------ */
+#sidebarReplay {
+    position: absolute;
+    left: 100px;
+    top: 370px;
+    font-size: 100px;
+    color: rgb(255, 0, 0);
+    opacity: 0.5;
+}
+
+#sidebarReplay:hover {
+    opacity: 1;
+}
+
+#sidebarScene4 {
+    visibility: hidden;
+}

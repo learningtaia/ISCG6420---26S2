@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 1</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="https://kit.fontawesome.com/235a267f01.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -13,7 +14,7 @@
         <nav class="nav">
             <a href="../index.html">Home</a>
         </nav>
-        <div class="banner">
+        <div class="banner">            <!-- BANNER START -->
             <a href="https://jschollitt.github.io/THTHackathon/" target="_blank">
                 <div id="bannerAd">
                     <div id="bannerScene1">
@@ -27,7 +28,7 @@
                     <div id="studentIDbanner">1485000</div>
                 </div>
             </a>
-        </div>
+        </div>                          <!-- BANNER START -->
         <main class="main">
             <h1>Te Hono Tech Challenge</h1>
             <section>                                                                           <!-- ------- REGISTRATION FORM START ------- -->
@@ -144,9 +145,9 @@
                 <script src="./form.js"></script>
             </section>                                                                          <!-- ------- REGISTRATION FORM END ------- -->
         </main>
-        <div class="sidebar">
-            <a href="https://jschollitt.github.io/THTHackathon#success/" target="_blank">
-                <div id="sidebarAd">
+        <div class="sidebar">                       <!-- SIDEBAR START -->
+            <div id="sidebarAd">
+                <a href="https://jschollitt.github.io/THTHackathon#success/" target="_blank">
                     <div id="sidebarScene1">
                         <img id="sidebar_sidebarScene1_img" src="./assets/img/petra-reid-0gT4e1ga5S8-unsplash.jpg" alt="flax plants" />
                         <div id="sidebarScene1Text">
@@ -169,10 +170,15 @@
                         <div id="sidebarScene3Line1">Flora Finda</div>
                         <div id="sidebarScene3Line2">A local iwi initiative</div>
                     </div>
-                    <div id="studentIDsidebar">1485000</div>
+                </a>    
+                <div id="sidebarScene4">
+                    <div id="sidebarReplay">
+                        <i class="fa-solid fa-circle-play" onclick="sidebarScene4Replay()"></i>
+                    </div>
                 </div>
-            </a>
-        </div>
+                <div id="studentIDsidebar">1485000</div>
+            </div>
+        </div>                                      <!-- SIDEBAR END -->
     </div>      <!-- main grid layout END -->
     <script src="./script.js"></script>
 
